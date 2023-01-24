@@ -1,5 +1,13 @@
 # How to Contribute
 
+## Contributions that are accepted
+
+Thank you for your interest! This release corresponds to the code used for our
+paper, therefore we would not accept contributions to the core model logic or
+additional features, but we may accept tweaks and bugfixes to the infrastructure
+code. In any case, you are welcome to fork this project, following the terms of
+the license.
+
 ## Contributor License Agreement
 
 Contributions to this project must be accompanied by a Contributor License
@@ -21,5 +29,5 @@ information on using pull requests.
 
 ## Community Guidelines
 
-This project follows [Google's Open Source Community
-Guidelines](https://opensource.google/conduct/).
+This project follows
+[Google's Open Source Community Guidelines](https://opensource.google/conduct/).
