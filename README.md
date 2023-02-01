@@ -44,14 +44,14 @@ git clone https://github.com/deepmind/transformer_grammars.git
 cd transformer_grammars
 ```
 
-1.  Create a virtual environment.
+2.  Create a virtual environment.
 
 ```bash
 python -m venv .tgenv
 source .tgenv/bin/activate
 ```
 
-1.  Install the package (in development mode) and its dependencies.
+3.  Install the package (in development mode) and its dependencies.
 
 ```bash
 ./install.sh
@@ -60,7 +60,7 @@ source .tgenv/bin/activate
 This also builds the C++ extension that is required to compute the attention
 mask, relative positions, memory update, etc.
 
-1.  Run the test suite.
+4.  Run the test suite.
 
 ```bash
 nosetests transformer_grammars
