@@ -128,11 +128,11 @@ Create a directory, set it to the `$TOKENIZER` environment variable.
 Train a tokenizer on the training data with the following, adjusting the user
 defined symbols to reflect the non-terminals in the data (can be obtained
 automatically with `perl -0pe 's/ /\n/g' < $DATA/train.cc | grep -E '\(|\)' |
-sort | uniq | perl -0pe 's/\n/,/g'`, but do check the list).
+LC_ALL=C sort | uniq | perl -0pe 's/\n/,/g'`, but do check the list).
 
 ```bash
 MODEL_PREFIX=$TOKENIZER/spm
-NON_TERMINALS=`perl -0pe 's/ /\n/g' < $DATA/train.cc  | grep -E '\(|\)' | sort | uniq | perl -0pe 's/\n/,/g'`
+NON_TERMINALS=`perl -0pe 's/ /\n/g' < $DATA/train.cc  | grep -E '\(|\)' | LC_ALL=C sort | uniq | perl -0pe 's/\n/,/g'`
 spm_train \
 --input=$DATA/train.cc \
 --model_prefix=$MODEL_PREFIX \
