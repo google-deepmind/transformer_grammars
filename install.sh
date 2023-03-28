@@ -39,6 +39,7 @@ sudo ldconfig -v
 
 # Go back to the package directory, install it and its dependencies.
 cd ../../..
-pip install -e .
+pip install --require-hashes -r requirements.txt
+pip install -e . --no-deps --no-index
 
 rm -rf .dependencies
