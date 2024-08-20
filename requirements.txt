@@ -381,9 +381,9 @@ more-itertools==9.0.0 \
     --hash=sha256:250e83d7e81d0c87ca6bd942e6aeab8cc9daa6096d12c5308f3f92fa5e5c1f41 \
     --hash=sha256:5a6257e40878ef0520b1803990e3e22303a41b5714006c32a3fd8304b26ea1ab
     # via transformer-grammars (setup.py)
-nltk==3.7 \
-    --hash=sha256:ba3de02490308b248f9b94c8bc1ac0683e9aa2ec49ee78536d8667afb5e3eec8 \
-    --hash=sha256:d6507d6460cec76d70afea4242a226a7542f85c669177b9c7f562b7cf1b05502
+nltk==3.9 \
+    --hash=sha256:d17863e861bb33ac617893329d71d06a3dfb7e3eb9ee0b8105281c53944a45a1 \
+    --hash=sha256:e98acac454407fa38b76cccb29208d377731cf7fab68f323754a3681f104531f
     # via transformer-grammars (setup.py)
 nose==1.3.7 \
     --hash=sha256:9ff7c6cc443f8c51994b34a667bbcf45afd6d945be7477b52e97516fd17c53ac \
