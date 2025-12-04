@@ -57,6 +57,8 @@ def compute_inputs_and_labels(
   # Be careful not to mutate the input, as the same objects may belong to an
   # iterator on which itertools.tee is applied.
   inp_ = inp.copy()
+  assert "for_observation" in inp_, "Input dict must contain 'for_observation' key"
+  assert "for_target" in inp_, "Input dict must contain 'for_target' key"
   for_observation = inp_.pop("for_observation")
   for_target = inp_.pop("for_target")
   return dict(inputs=for_observation, labels=lshift(for_target), **inp_)
@@ -80,6 +82,8 @@ def compute_token_types(
     inp: Dict[str, np.ndarray], ranges: masking_utils.TokenTypeRanges
 ) -> Dict[str, np.ndarray]:
   """Computes token types using a dictionary."""
+  assert "inputs" in inp, "Input dict must contain 'inputs' key"
+  assert "labels" in inp, "Input dict must contain 'labels' key"
   for key in ("inputs", "labels"):
     if ranges is not None:
       # Only ever happens for terminals on PTB
